@@ -1,0 +1,16 @@
+.project img {
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+}
+
+@media (min-width: 768px) {
+    .project {
+        transform: rotate(-45deg);   
+        width: 75%;
+        transition: all .3s ease;
+    }
+
+    .project:hover {
+        transform: rotate(0deg);
+    }
+}
