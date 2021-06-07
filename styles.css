@@ -1,0 +1,29 @@
+/*************** 
+Fonts 
+
+
+***************/
+
+/*************** 
+Colors
+
+
+***************/
+
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+main {
+    position: relative;
+}
+
+main .social-icons {
+    position: fixed;
+    top: 5rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}

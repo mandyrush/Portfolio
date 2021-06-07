@@ -1,0 +1,13 @@
+.billboard {
+    background-color: lightskyblue;
+}
+
+.billboard img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    /* position: absolute; */
+}
+
+.featured-projects {
+    background-color: lightgray;
+}
