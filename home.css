@@ -1,13 +1,35 @@
 .billboard {
-    background-color: lightskyblue;
+    background-color: #fff;
+    padding-top: 3rem;
 }
 
-.billboard img {
+.decorative-border {
+    position: relative;
+    top: 0;
     border-radius: 50%;
-    border: 5px solid #fff;
-    /* position: absolute; */
+    border: 3px solid #fff;
+    width: 100%;
+    height: auto;
+}
+
+.billboard .title {
+    color: #000;
+}
+
+.portfolio-description {
+    background-color: #ff7a8a;
+    color: #fff;
 }
 
 .featured-projects {
-    background-color: lightgray;
+    background-color: #f9f9f9;
+}
+
+.featured-projects .card {
+    border-radius: 15px;
+}
+
+.featured-projects .card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }

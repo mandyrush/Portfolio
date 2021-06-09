@@ -1,3 +1,7 @@
+.portfolio-projects {
+    padding-top: 5rem;
+}
+
 .project img {
     border-radius: 15px;
     box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
@@ -7,11 +11,14 @@
     .project {
         transform: rotate(-45deg);   
         width: 75%;
-        transition: all .3s ease;
-        margin-bottom: 3rem;
+        transition: all .5s ease;
+        margin: auto;
+        margin-bottom: 2rem;
     }
 
     .project:hover {
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(1.5);
+        position: relative;
+        z-index: 100;
     }
 }
