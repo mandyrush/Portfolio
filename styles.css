@@ -1,13 +1,14 @@
 /*************** 
 Fonts 
 
-
+font-family: 'Gruppo', cursive;
 ***************/
 
 /*************** 
 Colors
 
-Black: 062743
+Black: 231F20
+Dark Blue: 062743
 Navy: 113a5d
 Pink: ff7a8a
 Offwhite: f9f9f9
@@ -16,6 +17,8 @@ Offwhite: f9f9f9
 body {
     background-color: #eee;
     color: #113a5d;
+    font-family: 'Gruppo', cursive;
+    font-size: 1.25rem;
 }
 
 .page-container {
@@ -29,15 +32,43 @@ section {
     padding-bottom: 3rem;
 }
 
-main {
-    position: relative;
+h2 {
+    font-size: 3rem;
 }
 
-main .social-icons {
-    position: fixed;
-    top: 5rem;
-    right: 1rem;
-    display: flex;
-    flex-direction: column;
+/*************** 
+Links 
+***************/
+a {
+    color: #ff7a8a;
+    text-decoration: none;
+}
 
+a:hover,
+a:active,
+a:focus {
+    color: #ffb3bb;
+}
+
+/*************** 
+Buttons
+***************/
+.btn.btn-primary {
+    background-color: #ff7a8a;
+    border: none;
+    padding: 0.5rem 2rem;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
+    background-color: #ffb3bb;
+}
+
+/*************** 
+Interior Content
+***************/
+.interior-hero {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }

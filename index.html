@@ -14,19 +14,22 @@
     <link rel="stylesheet" href="./footer.css">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/e8a85165cb.js" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="page-container">
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="/">Amanda Rush</a>
+                <a class="navbar-brand" href="/">AR</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
                     <a class="nav-link" href="./about.html">About</a>
                     <a class="nav-link" href="./resume.html">Resume</a>
                     <a class="nav-link" href="./portfolio.html">Portfolio</a>
@@ -37,47 +40,42 @@
             </nav>
         </header>
         <main>
-            <div class="social-icons">
-                <a href="https://github.com/mandyrush" target="_blank" rel="noopener noreferrer">
-                    <span class="fa-stack" style="vertical-align: top;">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-
-                <a href="https://www.linkedin.com/in/amanda-rush/" target="_blank" rel="noopener noreferrer">
-                    <span class="fa-stack" style="vertical-align: top;">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-
-                <a href="mailto:mandyrush85@gmail.com">
-                    <span class="fa-stack" style="vertical-align: top;">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-            </div>
-
             <div class="billboard">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
-                        <div class="col-md-4">
-                            <img src="./images/amanda-portrait-white.jpg" alt="" class="img-fluid">
-                            <!-- <div class="position-relative">
-                                <div class="decorative-border">
-                                    <img src="./images/amanda-portrait-color.jpg" alt="Photo of Amanda Rush" class="img-fluid" onload="rollIn(this)">
-                                </div>
-                            </div> -->
+                        <div class="col-md-4 align-self-end">
+                            <img src="./images/amanda-portrait.jpg" alt="" class="img-fluid">
                         </div>
-                        <div class="col-md-6">
-                            <div class="title">
-                                <h1>Amanda Rush</h1>
-                                <h2>Web Developer</h2>
-                            </div>
+                        <div class="col-md-3">
+                            <h1>
+                                <span class="firstname">Amanda</span><br>
+                                <span class="lastname">Rush</span>
+                            </h1>
+                            <h2>Web Developer</h2>
                         </div>
                     </div>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/mandyrush" target="_blank" rel="noopener noreferrer">
+                        <span class="fa-stack" style="vertical-align: top;">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+    
+                    <a href="https://www.linkedin.com/in/amanda-rush/" target="_blank" rel="noopener noreferrer">
+                        <span class="fa-stack" style="vertical-align: top;">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+    
+                    <a href="mailto:mandyrush85@gmail.com">
+                        <span class="fa-stack" style="vertical-align: top;">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
                 </div>
             </div>
 
@@ -94,34 +92,25 @@
             <section class="featured-projects">
                 <div class="container">
                     <h2 class="text-center mb-5">Featured Projects</h2>
-                    <div class="row">
-                        <div class="col-md-4">
+                    <div class="row justify-content-center">
+                        <div class="col-md-3">
                             <a href="https://mandyrush.github.io/hairSalonWebsite/index.html" target="_blank" rel="noopener noreferrer">
-                                <div class="card">
+                                <div class="project">
                                     <img src="./images/lavender_sage.jpg" class="card-img-top" alt="Lavender & Sage">
-                                    <div class="card-body">
-                                        <h3>Multi-page Site</h3>
-                                    </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <a href="https://mandyrush.github.io/ACA_web101_Amanda_Rush/about.html" rel="noopener noreferrer">
-                                <div class="card">
+                                <div class="project">
                                     <img src="./images/about_me.jpg" class="card-img-top img-fluid" alt="About Me">
-                                    <div class="card-body">
-                                        <h3>About Me</h3>
-                                    </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <a href="https://mandyrush.github.io/First_Responsive-Website/index.html">
-                                <div class="card">
+                                <div class="project">
                                     <img src="./images/penguin_tech.jpg" class="card-img-top img-fluid" alt="Responsive Design">
-                                    <div class="card-body">
-                                        <h3>Responsive Design</h3>
-                                    </div>
                                 </div>
                             </a>
                         </div>
