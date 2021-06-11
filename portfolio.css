@@ -23,12 +23,30 @@ main {
         transition: all .5s ease;
         margin: auto;
         margin-bottom: 2rem;
+        position: relative;
     }
+
+    .overlay {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        top: 0;
+        left: 0;
+        transition: all .5s ease-in-out;
+      }
+
+      .onTop {
+        z-index: 1000;
+      }
+      .showOverlay{
+        background-color: rgba(0,0,0,0.75);
+        z-index: 1;
+      }
 
     .project:hover {
         transform: rotate(0deg) scale(1.5);
-        position: relative;
-        z-index: 100;
+        z-index: 2;
     }
 
     .project:hover h3 {
