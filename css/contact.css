@@ -1,0 +1,27 @@
+#contact {
+    background: url('../images/prague.png') no-repeat center center;
+    background-size: cover;
+    padding-bottom: 135px;
+    position: relative;
+}
+
+#contact h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 8px rgb(0 0 0 / 90%);
+    margin-bottom: 2rem;
+}
+
+#contact .photo-overlay {
+    background-color: rgba(0,0,0,0.3);
+}
+
+#contact .container {
+    position: relative;
+}
+
+@media(min-width: 768px) {
+    #contact {
+        background-attachment: fixed;
+    }
+}

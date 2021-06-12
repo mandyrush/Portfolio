@@ -8,10 +8,14 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./home.css">
-    <link rel="stylesheet" href="./navbar.css">
-    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/resume.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/e8a85165cb.js" crossorigin="anonymous"></script>
     <!-- Fonts -->
@@ -21,19 +25,17 @@
 <body>
     <div class="page-container">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="/">AR</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="/">Home</a>
-                    <a class="nav-link" href="./about.html">About</a>
-                    <a class="nav-link" href="./resume.html">Resume</a>
-                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                    <a class="nav-link" href="./contact.html">Contact</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#resume">Resume</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                     </div>
                 </div>
                 </div>
@@ -43,10 +45,10 @@
             <div class="billboard">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
-                        <div class="col-md-4 align-self-end">
-                            <img src="./images/amanda-portrait.jpg" alt="" class="img-fluid">
+                        <div class="col-md-5 col-xl-4 align-self-end order-2 order-md-1">
+                            <img src="./images/amanda-portrait-blk-wht.jpg" alt="" class="img-fluid">
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-5 col-xl-4 order-1 order-md-2 text-center text-md-start mb-3 mb-md-0">
                             <h1>
                                 <span class="firstname">Amanda</span><br>
                                 <span class="lastname">Rush</span>
@@ -59,64 +61,194 @@
                     <a href="https://github.com/mandyrush" target="_blank" rel="noopener noreferrer">
                         <span class="fa-stack" style="vertical-align: top;">
                             <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            <i class="fab fa-github fa-stack-1x fa-inverse icon"></i>
                         </span>
                     </a>
     
                     <a href="https://www.linkedin.com/in/amanda-rush/" target="_blank" rel="noopener noreferrer">
                         <span class="fa-stack" style="vertical-align: top;">
                             <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                            <i class="fab fa-linkedin-in fa-stack-1x fa-inverse icon"></i>
                         </span>
                     </a>
     
                     <a href="mailto:mandyrush85@gmail.com">
                         <span class="fa-stack" style="vertical-align: top;">
                             <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-envelope fa-stack-1x fa-inverse icon"></i>
                         </span>
                     </a>
                 </div>
             </div>
 
-            <section class="portfolio-description">
+            <section id="about">
                 <div class="container">
+                    <article class="row justify-content-center align-items-center">
+                        <div class="col-md-4 col-lg-4 col-xxl-3">
+                            <div class="img-border">
+                                <img src="./images/where_i_started_blk.png" alt="Hard Work" class="img-left">
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-lg-5 col-xxl-6 offset-md-1">
+                            <h2>About Me</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae numquam ipsa nesciunt accusamus dolor praesentium, debitis nihil sapiente aspernatur, consequuntur labore nam maiores voluptate corporis impedit nostrum, perferendis quaerat vel!</p>
+                        </div>
+                    </article>
+
+                    <article class="row justify-content-center align-items-center">
+                        <div class="col-md-7 col-lg-5 col-xxl-6 order-2 order-md-1">
+                            <h2>About My Work</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae numquam ipsa nesciunt accusamus dolor praesentium, debitis nihil sapiente aspernatur, consequuntur labore nam maiores voluptate corporis impedit nostrum, perferendis quaerat vel!</p>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xxl-3 offset-md-1 order-1 order-md-2">
+                            <div class="img-border">
+                                <img src="./images/where_i_started_blk.png" alt="Hard Work" class="img-right">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="resume">
+                <div class="photo-overlay"></div>
+                <div class="container">
+                    <h2>Resume</h2>
                     <div class="row justify-content-center">
-                        <div class="col-md-6 text-center">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatibus autem exercitationem adipisci sapiente. Suscipit reiciendis, quidem nostrum eligendi praesentium facilis, labore obcaecati eos voluptatum rem maxime. Totam, sapiente explicabo.</p>
+                        <div class="col-md-5 col-lg-4">
+                            <h3>Company - Location</h3>
+                            <p><em>From Date - To Date</em></p>
+                        </div>
+                        <div class="col-md-7 col-lg-6">
+                            <p>JOB TITLE</p>                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo doloremque expedita optio voluptatem neque, soluta laudantium quaerat quidem voluptatibus, possimus mollitia enim blanditiis aliquam dicta exercitationem? Unde, ducimus ut.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-5 col-lg-4">
+                            <h3>Company - Location</h3>
+                            <p><em>From Date - To Date</em></p>
+                        </div>
+                        <div class="col-md-7 col-lg-6">
+                            <p>JOB TITLE</p>                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo doloremque expedita optio voluptatem neque, soluta laudantium quaerat quidem voluptatibus, possimus mollitia enim blanditiis aliquam dicta exercitationem? Unde, ducimus ut.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-5 col-lg-4">
+                            <h3>Company - Location</h3>
+                            <p><em>From Date - To Date</em></p>
+                        </div>
+                        <div class="col-md-7 col-lg-6">
+                            <p>JOB TITLE</p>                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo doloremque expedita optio voluptatem neque, soluta laudantium quaerat quidem voluptatibus, possimus mollitia enim blanditiis aliquam dicta exercitationem? Unde, ducimus ut.</p>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <a href="#" class="btn btn-primary">Download Resume</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <div class="overlay"></div>
+                <div class="container">
+                    <h2>My Work</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-xl-4">
+                            <div class="project" onMouseOver="setOverlay(this)" onMouseLeave="removeOverlay(this)">
+                                <a href="https://mandyrush.github.io/First_Responsive-Website/index.html" target="_blank" rel="noopener noreferrer">
+                                    <img src="./images/penguin_tech.jpg" alt="" class="img-fluid">
+                                    <h3>Responsive Design</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-4">
+                            <div class="project" onMouseOver="setOverlay(this)" onMouseLeave="removeOverlay(this)">
+                                <a href="https://mandyrush.github.io/ACA_web101_Amanda_Rush/about.html" target="_blank" rel="noopener noreferrer">
+                                    <img src="./images/about_me.jpg" alt="" class="img-fluid">
+                                    <h3>About Me</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-xl-4">
+                            <div class="project" onMouseOver="setOverlay(this)" onMouseLeave="removeOverlay(this)">
+                                <a href="https://mandyrush.github.io/hairSalonWebsite/index.html" target="_blank" rel="noopener noreferrer">
+                                    <img src="./images/lavender_sage.jpg" alt="" class="img-fluid">
+                                    <h3>Multi-page Site</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-4">
+                            <div class="project" onMouseOver="setOverlay(this)" onMouseLeave="removeOverlay(this)">
+                                <a href="https://mandyrush.github.io/Dummy-Data-Todo-List/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./images/todos.jpg" alt="" class="img-fluid">
+                                    <h3>Todo List</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-4">
+                            <div class="project" onMouseOver="setOverlay(this)" onMouseLeave="removeOverlay(this)">                                
+                                <a href="https://mandyrush.github.io/ACA_web101_Amanda_Rush/contact.html" target="_blank" rel="noopener noreferrer">
+                                    <img src="./images/contact_page.jpg" alt="" class="img-fluid">
+                                    <h3>Contact Page</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-xl-4">
+                            <div class="project" onMouseOver="setOverlay(this)" onMouseLeave="removeOverlay(this)">
+                                <a href="https://mandyrush.github.io/TicTacToe-101/index.html" target="_blank" rel="noopener noreferrer">
+                                    <img src="./images/tic_tac_toe.jpg" alt="" class="img-fluid">
+                                    <h3>Tic Tac Toe</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-4">
+                            <div class="project" onMouseOver="setOverlay(this)" onMouseLeave="removeOverlay(this)">
+                                <a href="https://mandyrush.github.io/calculator-app-101/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./images/calculator.jpg" alt="" class="img-fluid">
+                                    <h3>Calculator</h3>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="featured-projects">
+            <section id=contact>
+                <div class="photo-overlay"></div>
                 <div class="container">
-                    <h2 class="text-center mb-5">Featured Projects</h2>
+                    <h2>Contact Me</h2>
                     <div class="row justify-content-center">
-                        <div class="col-md-3">
-                            <a href="https://mandyrush.github.io/hairSalonWebsite/index.html" target="_blank" rel="noopener noreferrer">
-                                <div class="project">
-                                    <img src="./images/lavender_sage.jpg" class="card-img-top" alt="Lavender & Sage">
-                                </div>
-                            </a>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label visually-hidden">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label visually-hidden">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label visually-hidden">Message</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-primary mb-3">Send</button>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <a href="https://mandyrush.github.io/ACA_web101_Amanda_Rush/about.html" rel="noopener noreferrer">
-                                <div class="project">
-                                    <img src="./images/about_me.jpg" class="card-img-top img-fluid" alt="About Me">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="https://mandyrush.github.io/First_Responsive-Website/index.html">
-                                <div class="project">
-                                    <img src="./images/penguin_tech.jpg" class="card-img-top img-fluid" alt="Responsive Design">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="text-center mt-4">
-                        <a href="./portfolio.html" class="btn btn-primary">View More</a>
                     </div>
                 </div>
             </section>
@@ -145,6 +277,7 @@
                     </span>
                 </a>
             </div>
+            <a href='https://pngtree.com/so/simple' class="credit-link">simple png from pngtree.com</a>
         </footer>
     </div>
     <!-- Bootstrap -->

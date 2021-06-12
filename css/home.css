@@ -1,0 +1,71 @@
+.billboard {
+    background: #000 url('../images/hexagon_bkgd2.png') no-repeat center center;
+    background-attachment: fixed;
+    padding-top: 3rem;
+    box-shadow: 0 3px 10px 3px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 50;
+}
+
+.billboard h1 {
+    color: #fff;
+    font-size: 3rem;
+    line-height: 0.8;
+    letter-spacing: 5px;
+}
+
+.billboard h2 {
+    color: #185081;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.social-icons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    margin-bottom: 1rem;
+    transition: all .3s ease;
+}
+
+.social-icons i.fa-circle {
+    color: #185081;
+}
+
+.social-icons i.icon {
+    color: #fff;
+}
+
+.social-icons a:hover i.fa-circle {
+    color: #fff;
+}
+
+.social-icons a:hover i.icon {
+    color: #185081;
+}
+
+@media (min-width: 768px) {
+    .social-icons {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .billboard h1 {   
+        font-size: 5rem;
+    }
+    
+    .billboard h2 {
+        font-size: 2.25rem;
+        letter-spacing: 3px;
+    }
+}
