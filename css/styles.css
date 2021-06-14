@@ -13,6 +13,10 @@ Pink: ff7a8a
 Offwhite: f9f9f9
 ***************/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #eee;
     color: #231F20;
@@ -68,12 +72,17 @@ Buttons
     padding: 0.5rem 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    position: relative;
+    bottom: 0;
+    box-shadow: none;
+    transition: all .3s ease;
 }
 
 .btn.btn-primary:hover,
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
-    background-color: #ffb3bb;
+    bottom: 3px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
 }
 
 /*************** 
